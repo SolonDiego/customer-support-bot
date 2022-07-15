@@ -7,6 +7,10 @@ import java.util.Properties;
 
 public class PropertiesReader {
 
+    private PropertiesReader() {
+
+    }
+
     public static String getProperty(String propertyKey) {
 
         Properties properties = new Properties();
