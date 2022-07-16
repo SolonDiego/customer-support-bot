@@ -14,14 +14,11 @@ public class App {
 		SpringApplication.run(App.class, args);
 
 		try {
-
 			TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
 			telegramBotsApi.registerBot(new Responder());
 
 		} catch (TelegramApiException telegramApiException) {
-
 			telegramApiException.printStackTrace();
-			
 		}
 
 	}
